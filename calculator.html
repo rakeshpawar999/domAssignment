@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+	, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>calculator</h1>
+    <input id="firstNumber" type="text" placeholder="enter 1st number" />
+    <input id="secondNumber" type="text" placeholder="enter 2nd number" />
+    <hr/>
+    <button onclick="Addition()">addition</button>
+    <button onclick="Subtraction()">subtraction</button>
+    <button onclick="multiplication()">multiplication</button>
+    <button onclick="division()">division</button>
+
+    <script type="text/javascript"></script>
+</body>
+
+</html>
+<script>
+    function Addition() {
+
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+
+        alert((+num1 + (+num2)))
+    }
+
+    function Subtraction() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+
+        alert(num1 - num2);
+    }
+
+    function multiplication() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+
+        alert(num1 * num2);
+    }
+
+    function division() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+
+        alert(num1 / num2);
+    }
+</script>
